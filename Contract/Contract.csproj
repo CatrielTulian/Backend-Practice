@@ -12,9 +12,6 @@
 
   <ItemGroup>
     <Folder Include="AuthenticationModel\" />
-    <Folder Include="Mappings\" />
-    <Folder Include="TasksModel\" />
-    <Folder Include="PersonsModel\" />
   </ItemGroup>
 
 </Project>
