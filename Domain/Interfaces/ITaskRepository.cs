@@ -1,14 +1,14 @@
-﻿using Domain.Entities
+﻿using Domain.Entities;
 
 namespace Domain.Interfaces
 {
     public interface ITaskRepository
     {
         void AddTask(Tasks task);
-        List<Tasks> GetAllTasks();
+        List<Tasks> GetTasks();
         Tasks? GetTaskById(int taskId);
-        void UpdateTask(Tasks task);
-        void DeleteTask(int taskId);
+        void UpdateTask(Tasks taskId);
+        void DeleteTask(Tasks taskId);
         List<Tasks> GetTasksByPersonId(int personId);
         List<Tasks> GetCompletedTasks();
         List<Tasks> GetPendingTasks();

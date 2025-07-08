@@ -9,5 +9,6 @@ namespace Domain.Interfaces
         Persons? GetPersonById(int personId);
         void UpdatePerson(Persons person);
         void DeletePerson(int personId);
+        void DeletePerson(Persons person);
     }
 }
