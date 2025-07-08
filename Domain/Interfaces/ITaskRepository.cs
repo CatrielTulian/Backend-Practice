@@ -4,12 +4,12 @@ namespace Domain.Interfaces
 {
     public interface ITaskRepository
     {
-        void AddTask(Tasks task);
+        void AddTask(Tasks Task);
         List<Tasks> GetTasks();
-        Tasks? GetTaskById(int taskId);
-        void UpdateTask(Tasks taskId);
-        void DeleteTask(Tasks taskId);
-        List<Tasks> GetTasksByPersonId(int personId);
+        Tasks? GetTaskById(int TaskId);
+        void UpdateTask(Tasks TaskId);
+        void DeleteTask(Tasks TaskId);
+        List<Tasks> GetTasksByPersonId(int TaskId);
         List<Tasks> GetCompletedTasks();
         List<Tasks> GetPendingTasks();
     }

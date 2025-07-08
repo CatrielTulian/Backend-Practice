@@ -8,10 +8,12 @@ namespace Domain.Entities
 {
     public class Persons
     {
-        public int personId { get; set; }
-        public string? name { get; set;}
-        public string? surname { get; set; }
+        public int PersonId { get; set; }
+        public string? Name { get; set;}
+        public string? Surname { get; set; }
 
-        public List<Tasks>? tasks { get; set; }
+        public List<Tasks>? Tasks { get; set; }
+        public string User {  get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
     }
 }

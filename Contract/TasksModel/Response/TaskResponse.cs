@@ -2,11 +2,11 @@
 {
     public class TaskResponse
     {
-        public int taskId { get; set; }
-        public string? title { get; set; } 
-        public string? description { get; set; } 
-        public DateTime hourAndDate { get; set; }
-        public bool isCompleted { get; set; } = false;
+        public int TaskId { get; set; }
+        public string? Title { get; set; } 
+        public string? Description { get; set; } 
+        public DateTime HourAndDate { get; set; }
+        public bool IsCompleted { get; set; } = false;
         
     }
 }

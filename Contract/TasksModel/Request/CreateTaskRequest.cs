@@ -2,9 +2,9 @@
 {
     public class TaskRequest
     {
-        public string title { get; set; } = string.Empty;
-        public string description { get; set; } = string.Empty;
-        public DateTime hourAndDate { get; set; }
-        public bool isCompleted { get; set; } = false;
+        public string Title { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public DateTime HourAndDate { get; set; }
+        public bool IsCompleted { get; set; } = false;
     }
 }
