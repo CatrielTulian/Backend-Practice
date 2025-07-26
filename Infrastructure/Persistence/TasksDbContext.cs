@@ -1,9 +1,10 @@
 ﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace Infrastructure.Persistence
 {
-    public class TasksDbContext : DbContext
+    public class TasksDbContext : Microsoft.EntityFrameworkCore.DbContext
     {
         public TasksDbContext(DbContextOptions<TasksDbContext> options) : base(options)
         {

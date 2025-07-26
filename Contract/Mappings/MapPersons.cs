@@ -19,7 +19,7 @@ namespace Contract.Mappings
         {
             return new PersonResponse()
             {
-                PersonId = Person.PersonId,
+                Id = Person.Id,
                 Name = Person.Name,
                 Surname = Person.Surname
             };

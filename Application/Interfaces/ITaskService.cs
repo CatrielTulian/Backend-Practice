@@ -8,7 +8,7 @@ namespace Application.Interfaces
         void CreateTask(TaskRequest request);
         List<TaskResponse> GetAllTasks();
         TaskResponse? GetTaskById(int taskId);
-        void UpdateTask(int taskId, TaskRequest request);
-        void DeleteTask(int taskId);
+        bool UpdateTask(int taskId, TaskRequest request);
+        bool DeleteTask(int taskId);
     }
 }

@@ -21,7 +21,7 @@ namespace Contract.Mappings
         {
             return new TaskResponse()
             {
-                TaskId = Task.TaskId,
+                Id = Task.Id,
                 Title = Task.Title,
                 Description = Task.Description,
                 HourAndDate = Task.HourAndDate,

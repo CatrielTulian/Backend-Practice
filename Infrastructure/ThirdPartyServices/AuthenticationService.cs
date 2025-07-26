@@ -47,7 +47,7 @@ namespace Infrastructure.ThirdPartyServices
 
             var claimsForToken = new List<Claim>();
             {
-                new Claim("sub", user.PersonId.ToString());
+                new Claim("sub", user.Id.ToString());
             }
             ;
 

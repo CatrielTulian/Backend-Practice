@@ -71,14 +71,5 @@ namespace Application.Services
 
         }
 
-        void ITaskService.UpdateTask(int taskId, TaskRequest request)
-        {
-            throw new NotImplementedException();
-        }
-
-        void ITaskService.DeleteTask(int taskId)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

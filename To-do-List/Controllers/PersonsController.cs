@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace To_do_List.Controllers
 {
     [ApiController]
-    [Route("Api/[Controler]")]
+    [Route("api/[controller]")]
     public class PersonsController : Controller
     {
         private readonly IPersonsService _personsService;
@@ -19,7 +19,7 @@ namespace To_do_List.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        
         public IActionResult CreatePerson([FromBody] PersonRequest person)
         {
             _personsService.CreatePerson(person);
@@ -27,7 +27,7 @@ namespace To_do_List.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        
         public IActionResult GetAllPersons()
         {
             var Response = _personsService.GetAllPersons();
@@ -38,7 +38,7 @@ namespace To_do_List.Controllers
             return Ok(Response);
         }
         [HttpGet("{id}")]
-        [Authorize]
+        
         public ActionResult<PersonResponse?> GetPersonById([FromRoute] int Id)
         {
             var response = _personsService.GetPersonById(Id);
@@ -51,14 +51,14 @@ namespace To_do_List.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize]
+        
         public ActionResult<bool> UpdatePerson([FromRoute] int Id, [FromBody] PersonRequest Person)
         {
             return Ok(_personsService.UpdatePerson(Id, Person));
         }
 
         [HttpDelete("{id}")]
-        [Authorize]
+        
         public ActionResult<bool> DeletePerson([FromRoute] int Id) 
         {
             return Ok(_personsService.DeletePerson(Id));
