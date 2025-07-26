@@ -6,8 +6,8 @@ namespace Domain.Interfaces
     {
         void AddPerson(Persons person);
         List<Persons> GetAllPersons();
-        Persons? GetPersonById(int personId);
+        Persons? GetPersonById(int PersonId);
         void UpdatePerson(Persons person);
-        void DeletePerson(int personId);
+        void DeletePerson(Persons person);
     }
 }

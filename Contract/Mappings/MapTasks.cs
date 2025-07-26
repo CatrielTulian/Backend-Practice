@@ -6,35 +6,35 @@ namespace Contract.Mappings
 {
     public static class MapTasks
     {
-        public static DomainEntity.Tasks ToTaskEntity(TaskRequest request)
+        public static DomainEntity.Tasks ToTaskEntity(TaskRequest Request)
         {
             return new DomainEntity.Tasks()
             {
-                title = request.title,
-                description = request.description,
-                hourAndDate = request.hourAndDate,
-                isCompleted = request.isCompleted,
+                Title = Request.Title,
+                Description = Request.Description,
+                HourAndDate = Request.HourAndDate,
+                IsCompleted = Request.IsCompleted,
 
             };
         }
-        public static TaskResponse ToTaskResponse(DomainEntity.Tasks task)
+        public static TaskResponse ToTaskResponse(DomainEntity.Tasks Task)
         {
             return new TaskResponse()
             {
-                taskId = task.taskId,
-                title = task.title,
-                description = task.description,
-                hourAndDate = task.hourAndDate,
-                isCompleted = task.isCompleted,
+                Id = Task.Id,
+                Title = Task.Title,
+                Description = Task.Description,
+                HourAndDate = Task.HourAndDate,
+                IsCompleted = Task.IsCompleted,
             };
         }
 
-        public static void ToTaskEntityUpdate(DomainEntity.Tasks task, TaskRequest request)
+        public static void ToTaskEntityUpdate(DomainEntity.Tasks Task, TaskRequest Request)
         {
-            task.title = request.title;
-            task.description = request.description;
-            task.hourAndDate = request.hourAndDate;
-            task.isCompleted = request.isCompleted;
+            Task.Title = Request.Title;
+            Task.Description = Request.Description;
+            Task.HourAndDate = Request.HourAndDate;
+            Task.IsCompleted = Request.IsCompleted;
         }
     }
 }

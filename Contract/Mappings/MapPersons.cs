@@ -6,29 +6,29 @@ namespace Contract.Mappings
 {
     public class MapPersons
     {
-        public static Domain.Entities.Persons MapToDomain(PersonRequest request)
+        public static Domain.Entities.Persons MapToDomain(PersonRequest Request)
         {
             return new DomainEntity.Persons()
             {
-                name = request.name,
-                surname = request.surname
+                Name = Request.Name,
+                Surname = Request.Surname
             };
         }
 
-        public static PersonResponse ToPersonResponse(Domain.Entities.Persons person)
+        public static PersonResponse ToPersonResponse(Domain.Entities.Persons Person)
         {
             return new PersonResponse()
             {
-                personId = person.personId,
-                name = person.name,
-                surname = person.surname
+                Id = Person.Id,
+                Name = Person.Name,
+                Surname = Person.Surname
             };
         }
 
-        public static void ToPersonEntityUpdate(DomainEntity.Persons person, PersonRequest request)
+        public static void ToPersonEntityUpdate(DomainEntity.Persons Person, PersonRequest Request)
         {
-            person.name = request.name;
-            person.surname = request.surname;
+            Person.Name = Request.Name;
+            Person.Surname = Request.Surname;
         }
     }
 }
